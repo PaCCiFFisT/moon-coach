@@ -499,4 +499,72 @@ h4 {
   top: 50%;
   right: 0;
   transform: translate(0, -50%);
+}
+
+.lead__container {
+  max-width: 1000px;
+  display: flex;
+  margin: 0 auto;
+  gap: 54px;
+}
+.lead__side {
+  position: relative;
+}
+.lead__title {
+  margin-bottom: 25px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form__input {
+  width: 100%;
+  background-color: var(--bg-color);
+  height: 70px;
+  border-bottom: 1px solid var(--main-color);
+  font-size: 16px;
+  line-height: 133%;
+  padding-left: 34px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.form__input:focus::-moz-placeholder {
+  position: absolute;
+  top: 0;
+  -moz-transition: 0.2s;
+  transition: 0.2s;
+}
+.form__input:focus:-ms-input-placeholder {
+  position: absolute;
+  top: 0;
+  -ms-transition: 0.2s;
+  transition: 0.2s;
+}
+.form__input:focus::placeholder {
+  position: absolute;
+  top: 0;
+  transition: 0.2s;
+}
+.side__text-container {
+  width: 90%;
+  height: 146px;
+  color: #efeee8;
+  padding: 30px 24px;
+  -moz-text-align-last: left;
+       text-align-last: left;
+  font-family: "Baskerville";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 133%;
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-color: var(--main-color);
+}
+.side__text {
+  margin-bottom: 9px;
 }/*# sourceMappingURL=style.css.map */

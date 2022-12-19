@@ -434,9 +434,9 @@ h4 {
   // .examples__item
 
   &__item {
-     &:not(:last-child) {
+    &:not(:last-child) {
       padding-bottom: 40px;
-      border-bottom: 1px solid rgba(#333333,  0.1);
+      border-bottom: 1px solid rgba(#333333, 0.1);
       margin-bottom: 50px;
     }
   }
@@ -480,7 +480,7 @@ h4 {
     flex-grow: 0;
     flex-basis: calc(33.33% - 2rem);
     min-width: 280px;
-      background-color: var(--block-color);
+    background-color: var(--block-color);
     padding: 24px 24px 16px 24px;
   }
 
@@ -506,5 +506,113 @@ h4 {
       right: 0;
       transform: translate(0, -50%);
     }
+  }
+}
+
+.lead {
+  // .lead__container
+
+  &__container {
+    max-width: 1000px;
+    display: flex;
+    margin: 0 auto;
+    gap: 54px;
+  }
+
+  // .lead__side
+
+  &__side {
+    position: relative;
+  }
+
+  // .lead__form
+
+  &__form {
+  }
+
+  // .lead__title
+
+  &__title {
+    margin-bottom: 25px;
+  }
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // .form__input
+
+  &__input {
+   width: 100%;
+   background-color: var(--bg-color);
+   height: 70px;
+   border-bottom: 1px solid var(--main-color);
+   font-size: 16px;
+   line-height: 133%;
+   padding-left: 34px;
+   display: flex;
+   align-items: center;
+   position: relative;
+   &:focus::placeholder{
+    // transform: translate(0,-10px);
+position: absolute;
+top: 0;
+transition: .2s;
+   }
+  }
+
+  // .form__input-name
+
+  &__input-name {
+  }
+
+  // .form__input-email
+
+  &__input-email {
+  }
+
+  // .form__input-message
+
+  &__input-message {
+  }
+}
+.lead-btn {
+}
+
+.side {
+  // .side__img
+
+  &__img {
+  }
+
+  &__text-container {
+    width: 90%;
+    height: 146px;
+    color: #efeee8;
+    padding: 30px 24px;
+    text-align-last: left;
+    font-family: "Baskerville";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 133%;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    // flex-direction: column;
+    position: absolute;
+    bottom: 24px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: var(--main-color);
+  }
+  // .side__text
+
+  &__text {
+    margin-bottom: 9px;
+  }
+
+  // .side__sign
+
+  &__sign {
   }
 }
