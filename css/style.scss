@@ -355,8 +355,9 @@ h4 {
 }
 
 .advantage {
+  margin-bottom: 176px;
   &__item {
-    max-width: 50%;
+    // width: 50%;
   }
 
   &__wrapper {
@@ -365,23 +366,23 @@ h4 {
     display: flex;
     flex-basis: 50%;
     flex-grow: 0;
-    gap: 54px;
+    gap: 10px;
   }
 
   // .advantage__image
 
   &__image {
+    flex-basis: 604px;
+    flex-shrink: 0;
+    flex-grow: 1;
   }
 
   // .advantage__facts
 
   &__facts {
-    padding: 79px 0 0 48px;
+    padding: 10px 0 0 48px;
     &:not(.facts__title) {
       line-height: 165%;
-    }
-    & p:last-child {
-      margin-bottom: 1232px;
     }
   }
 }
@@ -410,10 +411,15 @@ h4 {
   &__item {
     padding: 16px 0;
     border-bottom: 1px solid var(--main-color);
+    &:last-of-type {
+      margin-bottom: 62px;
+    }
   }
 
   // .facts__btn
 
   &__btn {
+    width: 215px;
+    height: 48px;
   }
 }
