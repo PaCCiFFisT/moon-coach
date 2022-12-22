@@ -15,59 +15,27 @@
 </head>
 
 <body>
+  <div class="go-top hidden" id="go-top"><a class="go-top__link" href="#header"></a></div>
   <div class="container">
-    <header class="header">
+    <header class="header" id="header">
       <h1><img src="./img/logo.png" alt="logo moon coach" class="header__logo"></h1>
       <nav class="navigation">
         <ul class="navigation__list">
           <li class="navigation__item navigation__item-more item-underline">
-            Homepages
-            <span></span>
-            <ul class="sublist">
-              <li class="sublist__item item-underline">
-                <a href="#" class="sublist__link">one</a>
-              </li>
-              <li class="sublist__item item-underline">
-                <a href="#" class="sublist__link">two</a>
-              </li>
-              <li class="sublist__item item-underline">
-                <a href="#" class="sublist__link">three</a>
-              </li>
-            </ul>
+            <a href="#home-pages" class="navigation__link">Homepages</a>
           </li>
           <li class="navigation__item navigation__item-more  item-underline">
-            About Pages
-            <span></span>
-            <ul class="sublist">
-              <li class="sublist__item item-underline">
-                <a href="#" class="sublist__link">one</a>
-              </li>
-              <li class="sublist__item item-underline">
-                <a href="#" class="sublist__link">two</a>
-              </li>
-              <li class="sublist__item item-underline">
-                <a href="#" class="sublist__link">three</a>
-              </li>
-            </ul>
-          </li>
-          <li class="navigation__item navigation__item-more item-underline">
-            Others
-            <span></span>
-            <ul class="sublist">
-              <li class="sublist__item item-underline">
-                <a href="#" class="sublist__link">one</a>
-              </li>
-              <li class="sublist__item item-underline">
-                <a href="#" class="sublist__link">two</a>
-              </li>
-              <li class="sublist__item item-underline">
-                <a href="#" class="sublist__link">three</a>
-              </li>
-            </ul>
+            <a href="#about-pages" class="navigation__link">About Pages</a>
+
           </li>
           <li class="navigation__item item-underline">
-            <a href="" class="navigation__link">Blog</a>
+            <a href="#blog-pages" class="navigation__link">Blog</a>
           </li>
+          <li class="navigation__item navigation__item-more item-underline">
+            <a href="#other-pages" class="navigation__link">Others</a>
+
+          </li>
+
         </ul>
       </nav>
       <div class="header__webflow">
@@ -82,7 +50,7 @@
         <p class="main__desc">Moon Coach is a beautiful, custom, and animated Webflow template focused on coaching,
           courses, and other service-based
           businesses.</p>
-        <button class="main__btn btn"><span>Explore pages</span> <img src="./img/Arrow.svg"
+        <button class="main__btn btn"><span><a href="">Explore pages</a></span> <img src="./img/Arrow.svg"
             alt="button's arrow"></button>
       </div>
 
@@ -125,14 +93,14 @@
           <p class="facts__text">We want to make sure you understand the power you have in your hands when deciding to
             use our template.</p>
           <h4 class="facts__subtitle">OUR Template:</h4>
-          <p class="facts__item">is fully responsive and ready to go live</p>
-          <p class="facts__item">has 3 unique homepages, 3 about pages, blog pages, and 4 other useful pages. This adds
+          <p class="facts__item">Is fully responsive and ready to go live</p>
+          <p class="facts__item">Has 3 unique homepages, 3 about pages, blog pages, and 4 other useful pages. This adds
             up to 40+ custom sections!</p>
-          <p class="facts__item">includes CMS (Content Management System) so you can easily edit dynamic content.</p>
-          <p class="facts__item">is modular which means that you can combine different sections or parts of theUser
+          <p class="facts__item">Includes CMS (Content Management System) so you can easily edit dynamic content.</p>
+          <p class="facts__item">Is modular which means that you can combine different sections or parts of theUser
             Interface and the feel and look will
             stay the same</p>
-          <p class="facts__item">was crafted with love and attention to detail by awarded designer</p>
+          <p class="facts__item">Was crafted with love and attention to detail by awarded designer</p>
           <button class="facts__btn btn"><span>Buy template</span><img src="./img/Arrow.svg"
               alt="button's arrow"></button>
         </div>
@@ -143,7 +111,7 @@
       <div class="examples__wrapper">
         <div class="examples__container">
           <section class="examples__item">
-            <h3 class="examples__title">Homepages</h3>
+            <h3 class="examples__title" id="home-pages">Homepages</h3>
             <p class="examples__text">The homepage is the face of your business. Select one from three minimalistic and
               subtly animated homepages, to
               introduce your users to what you're doing.</p>
@@ -163,7 +131,7 @@
             </div>
           </section>
           <section class="examples__item">
-            <h3 class="examples__title">About pages</h3>
+            <h3 class="examples__title" id="about-pages">About pages</h3>
             <p class="examples__text">If you didn't get enough space on the homepage to really deep dive into who you
               are,
               your story, and yourvalues, you can
@@ -184,7 +152,7 @@
             </div>
           </section>
           <section class="examples__item">
-            <h3 class="examples__title">Blog pages (CMS)</h3>
+            <h3 class="examples__title" id="blog-pages">Blog pages (CMS)</h3>
             <p class="examples__text">Share your knowledge in the easiest way possible, thanks to Webflow CMS and our
               clean
               structure.</p>
@@ -204,20 +172,20 @@
             </div>
           </section>
           <section class="examples__item">
-            <h3 class="examples__title">Other useful pages</h3>
+            <h3 class="examples__title" id="other-pages">Other useful pages</h3>
             <p class="examples__text">Complete your website with other pages.</p>
             <div class="examples__preview">
               <div class="preview__item">
                 <img class="preview__image" src="./img/other/IMAGE.png" alt="Contact page 1">
-                <p class="preview__desc">Contact 1</p>
+                <p class="preview__desc">Contact page 1</p>
               </div>
               <div class="preview__item">
                 <img class="preview__image" src="./img/other/IMAGE_1.png" alt="Contact page 2">
-                <p class="preview__desc">Contact 2</p>
+                <p class="preview__desc">Contact page 2</p>
               </div>
               <div class="preview__item">
                 <img class="preview__image" src="./img/other/IMAGE_2.png" alt="Contact page 3">
-                <p class="preview__desc">Contact 1</p>
+                <p class="preview__desc">Contact page 3</p>
               </div>
               <div class="preview__item">
                 <img class="preview__image" src="./img/other/IMAGE_3.png" alt="Pricing page">
@@ -242,7 +210,8 @@
           <div class="lead__side">
             <img src="./img/contact/IMAGE.png" alt="dandelion" class="side__img">
             <div class="side__text-container">
-              <p class="side__text">We are driven by honesty, motivation and hard work. That's why we are always here for
+              <p class="side__text">We are driven by honesty, motivation and hard work. That's why we are always here
+                for
                 you.</p>
               <img src="./img/contact/sign.svg" alt="owner sign" class="side__sign">
             </div>
@@ -250,13 +219,21 @@
           <div class="lead__form">
             <h3 class="lead__title">Have question about out template?</h3>
             <form class="form" action="get">
-              <label for="lead-name" hidden>Your name</label>
-              <input class="form__input form__input-name" type="text" name="name" placeholder="Your name" id="lead-name">
-              <label for="lead-email" hidden>Email</label>
-              <input class="form__input form__input-email" type="email" name="email" placeholder="Email" id="lead-email">
-              <label for="lead-message" hidden>Your message</label>
-              <input class="form__input form__input-message" type="text" name="message" placeholder="Your message" id="lead-message">
-              <button class="lead-btn btn">Send form</button>
+              <div class="form__section">
+                <input class="form__input form__input-name" type="text" required name="name" id="lead-name">
+                <label class="label-name" for="lead-name" title="Your name">Your name</label>
+
+              </div>
+              <div class="form__section">
+                <input class="form__input form__input-email" type="text" required name="email" id="lead-email">
+                <label class="label-email" for="lead-email" title="Email">Email</label>
+
+              </div>
+              <div class="form__section">
+                <input class="form__input form__input-message" type="text" required name="message" id="lead-message">
+                <label class="label-message" for="lead-message" title="Your message">Your message</label>
+              </div>
+              <button class="lead-btn btn"><span>Send form</span></button>
             </form>
           </div>
         </div>
