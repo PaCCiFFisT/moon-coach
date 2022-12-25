@@ -18,9 +18,13 @@ html {
   --block-color: #e4e2d3;
 }
 .hidden {
-  display: none;
+  opacity: 0;
+  transition: 1s;
+  transform: translate(-300%,0);
 }
 .go-top {
+  transition: 1s;
+
   position: fixed;
   width: 50px;
   height: 50px;
@@ -28,6 +32,17 @@ html {
   left: 15px;
   background-color: var(--block-color);
   border: 2px solid var(--main-color);
+  z-index: 2;
+  &::before{
+    width: 3px;
+    height: 40px;
+    position: absolute;
+    content: "";
+    background-color: var(--main-color);
+    left: 50%;
+    top: 10%;
+    transform:translate(-50%,0)
+  }
   // .go-top__link
   &__link {
     display: block;
@@ -37,21 +52,21 @@ html {
     &::after {
       position: absolute;
       content: "";
-      top: 10px;
-      right: 50%;
-      transform: translate(0, -10%) rotate(-45deg);
+      top: 20%;
+      left: 50%;
       width: 20px;
       height: 3px;
+      transform: translate(-80%, 0) rotate(-45deg);
       background-color: var(--main-color);
     }
-     &::before {
+    &::before {
       position: absolute;
       content: "";
-      top: 10px;
-      left: 50%;
-      transform: translate(0, -40%) rotate(45deg);
+      top: 20%;
+      right: 50%;
       width: 20px;
       height: 3px;
+      transform: translate(80%, 0) rotate(45deg);
       background-color: var(--main-color);
     }
   }
@@ -569,6 +584,7 @@ h4 {
 }
 
 .lead {
+  margin-bottom: 80px;
   // .lead__container
 
   &__container {
@@ -691,4 +707,66 @@ h4 {
 
   &__sign {
   }
+}
+
+.footer {
+  background-color: var(--block-color);
+  padding-top: 40px;
+
+  // .footer__top
+
+  &__top {
+    display: flex;
+    margin-bottom: 40px;
+  }
+
+  // .footer__logo-section
+
+  &__logo-section {
+  }
+
+  // .footer__logo
+
+  &__logo {
+    width: 187px;
+    height: 34px;
+  }
+
+  // .footer__social
+
+  &__social {
+    margin-left: auto;
+    display: flex;
+    gap: 16px;
+  }
+
+  // .footer__bot
+
+  &__bot {
+    margin-bottom: 20px;
+  }
+
+  // .footer__bot--webflow
+
+  &__bot--webflow {
+  }
+}
+.social {
+  // .social__icons
+
+  &__icons {
+    width: 40px;
+    height: 40px;
+    border: 0px solid var(--main-color);
+  }
+  // .social__link
+
+  &__link {
+    &:hover .social__icons {
+      scale: 1.1;
+      transition: 0.4s;
+    }
+  }
+}
+.self-link {
 }
