@@ -1,5 +1,4 @@
-const swiper = new Swiper(".swiper", {
-  // Optional parameters
+const swiperConfiguration = {
   preventInteractionOnTransition: true,
   direction: "horizontal",
   loop: true,
@@ -14,7 +13,9 @@ const swiper = new Swiper(".swiper", {
       autoHeight: true,
     },
   },
-});
+};
+
+const swiper = new Swiper(".swiper", swiperConfiguration);
 
 const swiper1 = new Swiper(".swiper-1", {
   // Optional parameters
@@ -34,6 +35,8 @@ const swiper1 = new Swiper(".swiper-1", {
     },
   },
 });
+
+
 
 const goUpBtn = document.getElementById("go-top");
 

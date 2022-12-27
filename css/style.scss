@@ -256,10 +256,7 @@ h4 {
     }
   }
 
-  // .header__webflow--link
 
-  &__webflow--link {
-  }
 }
 .item-underline {
   position: relative;
@@ -368,25 +365,6 @@ h4 {
     }
   }
 
-  // .navigation__link
-
-  &__link {
-  }
-}
-
-//go back and complete sublist menu
-.sublist {
-  display: none;
-  // .sublist__item
-
-  &__item {
-    margin-bottom: 10px;
-  }
-
-  // .sublist__link
-
-  &__link {
-  }
 }
 
 .content {
@@ -519,8 +497,7 @@ h4 {
 
 .advantage {
   margin-bottom: 80px;
-  &__item {
-  }
+
 
   &__wrapper {
     padding-top: 21px;
@@ -549,10 +526,7 @@ h4 {
     }
   }
 
-  // .advantage__facts
 
-  &__facts {
-  }
 }
 
 .facts {
@@ -643,12 +617,6 @@ h4 {
   }
 }
 
-.section {
-  // .section__title-hidden
-
-  &__title-hidden {
-  }
-}
 .preview {
   // .preview__item
 
@@ -787,10 +755,7 @@ h4 {
 }
 
 .side {
-  // .side__img
 
-  &__img {
-  }
   //.side__text-container
   &__text-container {
     width: 90%;
@@ -814,10 +779,7 @@ h4 {
     margin-bottom: 9px;
   }
 
-  // .side__sign
 
-  &__sign {
-  }
 }
 
 .footer {
@@ -831,10 +793,7 @@ h4 {
     margin-bottom: 40px;
   }
 
-  // .footer__logo-section
 
-  &__logo-section {
-  }
 
   // .footer__logo
 
@@ -857,10 +816,7 @@ h4 {
     margin-bottom: 20px;
   }
 
-  // .footer__bot--webflow
 
-  &__bot--webflow {
-  }
 }
 .social {
   // .social__icons
@@ -879,8 +835,7 @@ h4 {
     }
   }
 }
-.self-link {
-}
+
 @media (max-width: 460px) {
   .lead-btn {
     max-width: calc(100% - 20px);

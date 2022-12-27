@@ -357,6 +357,7 @@ h4 {
   transform: rotate(-45deg);
   transition: 0.2s;
 }
+
 .item-underline {
   position: relative;
 }
@@ -458,12 +459,7 @@ h4 {
   background-color: var(--main-color);
   transform: rotate(-45deg);
 }
-.sublist {
-  display: none;
-}
-.sublist__item {
-  margin-bottom: 10px;
-}
+
 .content__wrapper {
   display: flex;
   flex-direction: column;
@@ -614,6 +610,7 @@ h4 {
     width: 100%;
   }
 }
+
 .facts__title {
   margin-bottom: 28px;
   line-height: 116%;
@@ -808,6 +805,7 @@ h4 {
 .side__text {
   margin-bottom: 9px;
 }
+
 .footer {
   background-color: var(--block-color);
   padding-top: 40px;
@@ -828,6 +826,7 @@ h4 {
 .footer__bot {
   margin-bottom: 20px;
 }
+
 .social__icons {
   width: 40px;
   height: 40px;
