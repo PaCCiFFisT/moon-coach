@@ -482,6 +482,11 @@ h4 {
   margin-bottom: 30px;
   font-weight: 700;
 }
+@media (max-width: 600px) {
+  .main__title {
+    font-size: 38px;
+  }
+}
 .main__desc {
   font-size: 22px;
   line-height: 165%;
@@ -855,7 +860,8 @@ h4 {
   }
 }
 @media (max-width: 400px) {
-  .swiper, .swiper-1 {
+  .swiper,
+.swiper-1 {
     width: 320px;
     height: 350px;
   }

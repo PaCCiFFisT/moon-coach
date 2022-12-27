@@ -19,7 +19,6 @@ const swiper = new Swiper(".swiper", {
 const swiper1 = new Swiper(".swiper-1", {
   // Optional parameters
   preventInteractionOnTransition: true,
-  // autoHeight: true,
   direction: "horizontal",
   loop: true,
   speed: 10000,
