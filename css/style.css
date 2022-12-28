@@ -431,34 +431,6 @@ h4 {
 .navigation__item:last-child {
   margin-right: 0;
 }
-.navigation__item-more span {
-  padding-right: 20px;
-  position: relative;
-}
-.navigation__item-more span::before {
-  content: "";
-  position: absolute;
-  right: 0;
-  top: 50%;
-  width: 11px;
-  height: 2px;
-  background-color: var(--main-color);
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-}
-.navigation__item-more span::after {
-  content: "";
-  position: absolute;
-  right: -7px;
-  top: 50%;
-  width: 11px;
-  height: 2px;
-  background-color: var(--main-color);
-  transform: rotate(-45deg);
-}
 
 .content__wrapper {
   display: flex;
