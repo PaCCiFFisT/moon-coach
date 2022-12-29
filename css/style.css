@@ -123,14 +123,8 @@ html {
   --block-color: #e4e2d3;
 }
 
-.hidden {
-  opacity: 0;
-  transition: 1s;
-  transform: translate(-300%, 0);
-}
-
 .go-top {
-  transition: 1s;
+  transition: 0.4s;
   position: fixed;
   width: 50px;
   height: 50px;
@@ -139,6 +133,10 @@ html {
   background-color: var(--block-color);
   border: 2px solid var(--main-color);
   z-index: 2;
+}
+.go-top.hidden {
+  transition: 0.4s;
+  transform: translate(-300%, 0);
 }
 .go-top::before {
   width: 3px;
@@ -671,6 +669,7 @@ h4 {
 }
 
 .lead {
+  position: relative;
   margin-bottom: 80px;
 }
 .lead__container {
@@ -844,4 +843,95 @@ h4 {
   .main__title {
     font-size: 40px;
   }
+}
+.form__popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(169, 169, 169, 0.5);
+  width: 100vw;
+  height: 100%;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.popup__container {
+  position: relative;
+  text-align: center;
+  width: 70%;
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: var(--block-color);
+}
+@media (min-width: 1000px) {
+  .popup__container {
+    width: 50%;
+    padding: 40px 20px;
+  }
+}
+.popup__close {
+  background-color: var(--block-color);
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  transform: translate(0, -110%);
+  position: absolute;
+  border: 3px solid transparent;
+}
+.popup__close:hover {
+  border: 3px solid var(--main-color);
+  transition: 0.4s ease-out;
+}
+.popup__close::before {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 3px;
+  background-color: var(--main-color);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.popup__close::after {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 3px;
+  background-color: var(--main-color);
+  top: 0;
+  right: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+.popup__title {
+  font-size: calc(28px + 10 * ((100vw - 320px) / (1280 - 320)));
+}
+.popup__text {
+  font-size: calc(16px + 12 * ((100vw - 320px) / (1280 - 320)));
+}
+.popup__btn {
+  align-self: center;
+  min-width: 40%;
+  padding: 0 10px;
+  height: 40px;
+}
+.popup__btn span {
+  pointer-events: none;
+}
+@media (min-width: 1000px) {
+  .popup__btn {
+    min-width: 20%;
+  }
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
 }/*# sourceMappingURL=style.css.map */

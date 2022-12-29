@@ -217,8 +217,16 @@
             </div>
           </div>
           <div class="lead__form">
+            <div class="form__popup hidden" id="popup">
+              <div class="popup__container">
+                <button title="Close popup" class="popup__close" id="popup-close"></button>
+                <h3 class="popup__title">Thank You for request!</h3>
+                <p class="popup__text">We contact to you as fast as possible</p>
+                <button title="Close popup" class="popup__btn btn" id="popup-btn"><span>Deal!</span></button>
+              </div>
+            </div>
             <h3 class="lead__title">Have question about our template?</h3>
-            <form class="form" action="get">
+            <form class="form" action="#" name="request-form" >
               <div class="form__section">
                 <input class="form__input form__input-name" type="text" required name="name" id="lead-name">
                 <label class="label-name" for="lead-name" title="Your name">Your name</label>
